@@ -79,12 +79,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CrawlerImg.aspx" />
     <Content Include="CrawlerLink.aspx" />
     <Content Include="ExampleCrawLink.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrawlerImg.aspx.cs">
+      <DependentUpon>CrawlerImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrawlerImg.aspx.designer.cs">
+      <DependentUpon>CrawlerImg.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CrawlerLink.aspx.cs">
       <DependentUpon>CrawlerLink.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

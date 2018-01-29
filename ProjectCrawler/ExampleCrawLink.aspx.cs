@@ -21,7 +21,7 @@ namespace ProjectCrawler
         /// </summary>
         public void HrefCrawler()
         {
-            var hrefList = new List<examplemyhref>();//定义泛型列表存放城市名称及对应的酒店URL   
+            var hrefList = new List<examplemyhref>();//定义泛型列表存放URL   
             string initurl = "http://tieba.baidu.com/f?kw=%E5%8D%8E%E4%B8%9C%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&ie=utf-8";
             string reslult = string.Empty;
             var hrefCrawler = new SimpleCrawler();//调用爬虫程序
