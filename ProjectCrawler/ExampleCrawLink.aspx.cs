@@ -23,7 +23,7 @@ namespace ProjectCrawler
         {
             var hrefList = new List<examplemyhref>();//定义泛型列表存放URL   
             string initurl = "http://tieba.baidu.com/f?kw=%E5%8D%8E%E4%B8%9C%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&ie=utf-8";
-            string reslult = string.Empty;
+            string result = string.Empty;
             var hrefCrawler = new SimpleCrawler();//调用爬虫程序
             hrefCrawler.url = new Uri(initurl);//定义爬虫入口URL      
             Response.Write("爬虫开始抓取地址：" + hrefCrawler.url.ToString() + "</br>");
@@ -45,7 +45,7 @@ namespace ProjectCrawler
                         if (!hrefList.Contains(h))
                         {
                                 hrefList.Add(h);//将数据加入到泛型列表
-                                reslult += h.hreftitle + "|" + h.hrefsrc + "</br>";//将名称及URL显示到网页
+                        result += h.hreftitle + "|" + h.hrefsrc + "</br>";//将名称及URL显示到网页
                             
                         }
                     }
@@ -53,7 +53,7 @@ namespace ProjectCrawler
                     Response.Write("爬虫抓取任务完成！合计 " + links.Count + " 个超级链接。</br>");
                     Response.Write("耗时：" + e.Milliseconds + "</br>毫秒");
                     Response.Write("线程：" + e.ThreadId + "</br>");
-                    Response.Write(reslult);
+                    Response.Write(result);
                     Response.Write("===============================================</br>");
 
                 };
