@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/ProjectCrawler/CrawlerLink.aspx.designer.cs
+/ProjectCrawler/CrawlerLink.aspx.cs
+/ProjectCrawler/CrawlerLink.aspx
