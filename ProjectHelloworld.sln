@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectHelloworld", "Projec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCrawler", "ProjectCrawler\ProjectCrawler.csproj", "{2FA89033-58C6-4E47-8108-5FB77055F8BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAlgorithm", "ProjectAlgorithm\ProjectAlgorithm.csproj", "{5D19038A-9DDE-4D45-B943-7D999E3EE141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2FA89033-58C6-4E47-8108-5FB77055F8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FA89033-58C6-4E47-8108-5FB77055F8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FA89033-58C6-4E47-8108-5FB77055F8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D19038A-9DDE-4D45-B943-7D999E3EE141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D19038A-9DDE-4D45-B943-7D999E3EE141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D19038A-9DDE-4D45-B943-7D999E3EE141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D19038A-9DDE-4D45-B943-7D999E3EE141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
