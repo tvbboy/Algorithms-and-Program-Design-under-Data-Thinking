@@ -77,6 +77,7 @@
   <ItemGroup>
     <Content Include="ExampleMonteCarloPi.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="MonteCarloIntegral.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +90,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MonteCarloIntegral.aspx.cs">
+      <DependentUpon>MonteCarloIntegral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonteCarloIntegral.aspx.designer.cs">
+      <DependentUpon>MonteCarloIntegral.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
