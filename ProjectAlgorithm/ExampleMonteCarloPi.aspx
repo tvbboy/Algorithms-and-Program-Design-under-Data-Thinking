@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            请输入随机样本的数量<asp:TextBox ID="txtNum" runat="server"></asp:TextBox>
+            请输入随机样本的数量:<asp:TextBox ID="txtNum" runat="server"></asp:TextBox>
              <br />
             <br />
             <asp:CheckBox ID="chkPrintPoint" runat="server" Text="显示随机样本" />
