@@ -75,18 +75,34 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ExampleKmeans.aspx" />
     <Content Include="ExampleMonteCarloPi.aspx" />
+    <Content Include="ExampleRandom.aspx" />
     <Content Include="Global.asax" />
     <Content Include="MonteCarloIntegral.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExampleKmeans.aspx.cs">
+      <DependentUpon>ExampleKmeans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleKmeans.aspx.designer.cs">
+      <DependentUpon>ExampleKmeans.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleMonteCarloPi.aspx.cs">
       <DependentUpon>ExampleMonteCarloPi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExampleMonteCarloPi.aspx.designer.cs">
       <DependentUpon>ExampleMonteCarloPi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleRandom.aspx.cs">
+      <DependentUpon>ExampleRandom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleRandom.aspx.designer.cs">
+      <DependentUpon>ExampleRandom.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
