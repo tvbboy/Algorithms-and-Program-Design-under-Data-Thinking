@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.AITools.Tvbboy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Common.AITools.Tvbboy.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -75,14 +79,42 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ExampleDatabase.aspx" />
+    <Content Include="ExampleDatabaseReadList.aspx" />
+    <Content Include="ExampleDatabaseReadOne.aspx" />
     <Content Include="ExampleKmeans.aspx" />
     <Content Include="ExampleMonteCarloPi.aspx" />
+    <Content Include="ExampleNaiveBayes.aspx" />
     <Content Include="ExampleRandom.aspx" />
+    <Content Include="ExampleRecursionFact.aspx" />
+    <Content Include="ExersizeDatabaseReadList.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="MonteCarloProduct.aspx" />
     <Content Include="MonteCarloIntegral.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExampleDatabase.aspx.cs">
+      <DependentUpon>ExampleDatabase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleDatabase.aspx.designer.cs">
+      <DependentUpon>ExampleDatabase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDatabaseReadList.aspx.cs">
+      <DependentUpon>ExampleDatabaseReadList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleDatabaseReadList.aspx.designer.cs">
+      <DependentUpon>ExampleDatabaseReadList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDatabaseReadOne.aspx.cs">
+      <DependentUpon>ExampleDatabaseReadOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleDatabaseReadOne.aspx.designer.cs">
+      <DependentUpon>ExampleDatabaseReadOne.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleKmeans.aspx.cs">
       <DependentUpon>ExampleKmeans.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -97,6 +129,13 @@
     <Compile Include="ExampleMonteCarloPi.aspx.designer.cs">
       <DependentUpon>ExampleMonteCarloPi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExampleNaiveBayes.aspx.cs">
+      <DependentUpon>ExampleNaiveBayes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleNaiveBayes.aspx.designer.cs">
+      <DependentUpon>ExampleNaiveBayes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleRandom.aspx.cs">
       <DependentUpon>ExampleRandom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,8 +143,29 @@
     <Compile Include="ExampleRandom.aspx.designer.cs">
       <DependentUpon>ExampleRandom.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExampleRecursionFact.aspx.cs">
+      <DependentUpon>ExampleRecursionFact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleRecursionFact.aspx.designer.cs">
+      <DependentUpon>ExampleRecursionFact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExersizeDatabaseReadList.aspx.cs">
+      <DependentUpon>ExersizeDatabaseReadList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExersizeDatabaseReadList.aspx.designer.cs">
+      <DependentUpon>ExersizeDatabaseReadList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MonteCarloProduct.aspx.cs">
+      <DependentUpon>MonteCarloProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonteCarloProduct.aspx.designer.cs">
+      <DependentUpon>MonteCarloProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="MonteCarloIntegral.aspx.cs">
       <DependentUpon>MonteCarloIntegral.aspx</DependentUpon>
@@ -115,6 +175,7 @@
       <DependentUpon>MonteCarloIntegral.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

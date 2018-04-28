@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectAlgorithm", "Project
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectWordSegmenter", "ProjectWordSegmenter\ProjectWordSegmenter.csproj", "{9703ABD5-433D-4308-951A-C029C258A64E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEchart", "ProjectEchart\ProjectEchart.csproj", "{19F0C339-4C4B-4199-9C70-F9187B2A2B5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9703ABD5-433D-4308-951A-C029C258A64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9703ABD5-433D-4308-951A-C029C258A64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9703ABD5-433D-4308-951A-C029C258A64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19F0C339-4C4B-4199-9C70-F9187B2A2B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F0C339-4C4B-4199-9C70-F9187B2A2B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F0C339-4C4B-4199-9C70-F9187B2A2B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F0C339-4C4B-4199-9C70-F9187B2A2B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
