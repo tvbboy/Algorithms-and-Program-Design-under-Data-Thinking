@@ -79,21 +79,34 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ExampleBasicStatistics.aspx" />
     <Content Include="ExampleDatabase.aspx" />
     <Content Include="ExampleDatabaseReadList.aspx" />
     <Content Include="ExampleDatabaseReadOne.aspx" />
+    <Content Include="ExampleDropdownListFromDatatable.aspx" />
     <Content Include="ExampleKmeans.aspx" />
+    <Content Include="ExampleLinearRegression.aspx" />
     <Content Include="ExampleMonteCarloPi.aspx" />
     <Content Include="ExampleNaiveBayes.aspx" />
     <Content Include="ExampleRandom.aspx" />
     <Content Include="ExampleRecursionFact.aspx" />
+    <Content Include="ExampleRecursionDB.aspx" />
+    <Content Include="ExampleTry.aspx" />
     <Content Include="ExersizeDatabaseReadList.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="HomeworkDijkstra.aspx" />
     <Content Include="MonteCarloProduct.aspx" />
     <Content Include="MonteCarloIntegral.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExampleBasicStatistics.aspx.cs">
+      <DependentUpon>ExampleBasicStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleBasicStatistics.aspx.designer.cs">
+      <DependentUpon>ExampleBasicStatistics.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleDatabase.aspx.cs">
       <DependentUpon>ExampleDatabase.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -115,12 +128,26 @@
     <Compile Include="ExampleDatabaseReadOne.aspx.designer.cs">
       <DependentUpon>ExampleDatabaseReadOne.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExampleDropdownListFromDatatable.aspx.cs">
+      <DependentUpon>ExampleDropdownListFromDatatable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleDropdownListFromDatatable.aspx.designer.cs">
+      <DependentUpon>ExampleDropdownListFromDatatable.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleKmeans.aspx.cs">
       <DependentUpon>ExampleKmeans.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExampleKmeans.aspx.designer.cs">
       <DependentUpon>ExampleKmeans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleLinearRegression.aspx.cs">
+      <DependentUpon>ExampleLinearRegression.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleLinearRegression.aspx.designer.cs">
+      <DependentUpon>ExampleLinearRegression.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleMonteCarloPi.aspx.cs">
       <DependentUpon>ExampleMonteCarloPi.aspx</DependentUpon>
@@ -150,6 +177,20 @@
     <Compile Include="ExampleRecursionFact.aspx.designer.cs">
       <DependentUpon>ExampleRecursionFact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExampleRecursionDB.aspx.cs">
+      <DependentUpon>ExampleRecursionDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleRecursionDB.aspx.designer.cs">
+      <DependentUpon>ExampleRecursionDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleTry.aspx.cs">
+      <DependentUpon>ExampleTry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleTry.aspx.designer.cs">
+      <DependentUpon>ExampleTry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExersizeDatabaseReadList.aspx.cs">
       <DependentUpon>ExersizeDatabaseReadList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +200,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkDijkstra.aspx.cs">
+      <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkDijkstra.aspx.designer.cs">
+      <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
     </Compile>
     <Compile Include="MonteCarloProduct.aspx.cs">
       <DependentUpon>MonteCarloProduct.aspx</DependentUpon>

@@ -36,6 +36,7 @@ namespace ProjectCrawler
                 {
                     //使用正则表达式清洗网页源代码中的数据
                     string pattern= @"<img\b[^<>]*?\bsrc[\s\t\r\n]*=[\s\t\r\n]*[""']?[\s\t\r\n]*(?<imgUrl>[^\s\t\r\n""'<>]*)[^<>]*?/?[\s\t\r\n]*>";
+                    
                     var imgs = Regex.Matches(e.PageSource, pattern, RegexOptions.IgnoreCase);
                     foreach (Match match in imgs)
                     {

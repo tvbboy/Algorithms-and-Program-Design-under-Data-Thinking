@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using SQL;
+﻿using SQL;
+using System;
 using System.Data.SqlClient;
 namespace ProjectAlgorithm
 {

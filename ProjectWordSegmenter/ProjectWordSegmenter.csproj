@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="JiebaNet.Segmenter">
+      <HintPath>..\..\dll\JiebaNet.Segmenter.dll</HintPath>
+    </Reference>
     <Reference Include="Lucene.China">
       <HintPath>..\..\dll\ChineseAnalyzer\Lucene.China.dll</HintPath>
     </Reference>
@@ -82,7 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ExampleChineseAnalyzer.aspx" />
+    <Content Include="ExampleJieba.aspx" />
+    <Content Include="ExampleWordCloud.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="js\echarts-wordcloud.js" />
+    <Content Include="js\echarts-wordcloud.min.js" />
+    <Content Include="js\echarts.simple.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +100,20 @@
     </Compile>
     <Compile Include="ExampleChineseAnalyzer.aspx.designer.cs">
       <DependentUpon>ExampleChineseAnalyzer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleJieba.aspx.cs">
+      <DependentUpon>ExampleJieba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleJieba.aspx.designer.cs">
+      <DependentUpon>ExampleJieba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleWordCloud.aspx.cs">
+      <DependentUpon>ExampleWordCloud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleWordCloud.aspx.designer.cs">
+      <DependentUpon>ExampleWordCloud.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

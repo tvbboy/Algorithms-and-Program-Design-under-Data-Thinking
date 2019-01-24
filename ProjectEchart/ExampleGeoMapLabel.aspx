@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleGeoMapLabel.aspx.cs" Inherits="ProjectEchart.ExampleGeoMapLabel" %>
+﻿c<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleGeoMapLabel.aspx.cs" Inherits="ProjectEchart.ExampleGeoMapLabel" %>
 
 <!DOCTYPE html>
 
@@ -73,12 +73,12 @@
                         geo: [{
                             map: 'china',
                             roam: true,
-                            left: 550, //地图在网页上的位置
+                            left: 350, //地图在网页上的位置
                             width: 300,
-                            zoom: 4,//地图初始的放大系数
+                            zoom: 2,//地图初始的放大系数
                             scaleLimit: {
                                 min: 1.5,
-                                max: 4
+                                max: 3
                             }
                         }],
                         tooltip: {
@@ -102,7 +102,7 @@
                             name: '李世民父子',
                             type: 'scatter',
                             symbolSize: function (val) {
-                                return val[2] * 20;
+                                return val[2] * 30;
                             },
                             data: data2
                         }]
