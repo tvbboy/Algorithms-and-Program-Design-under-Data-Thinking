@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ProjectAlgorithm
 {
@@ -14,12 +9,8 @@ namespace ProjectAlgorithm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("10的阶乘是" + Fact(10)+"</br>");
-            Response.Write("10个斐波那契序列：");
-            for (int i = 1; i <= 10; i++)
-            {
-                Response.Write(Fabi(i)+ "&nbsp;&nbsp;");
-            }
+            
+           
         }
         /// <summary>
         /// 求a这个数的阶乘
@@ -33,19 +24,17 @@ namespace ProjectAlgorithm
             else
                 return a * Fact(a - 1);
         }
-        /// <summary>
-        /// 返回第n个位置的数
-        /// </summary>
-        /// <param name="a"></param>
-        /// <returns></returns>
-        private int Fabi(int n)
-        {
-            if (n == 2)
-                return 1;
-            else if (n == 1)
-                return 1;
-            else
-                return Fabi(n-1)+Fabi(n-2);
-        }
+       protected void btnFact_Click(object sender, EventArgs e)
+       {
+            try
+            {
+                int num = int.Parse(txtNum.Text);
+                Response.Write(string.Format("{0}的阶乘是{1}", num, Fact(10)));
+            }
+            catch
+            {
+                Response.Write("输入的内容有误，请重新输入");
+            }
+       }
     }
 }

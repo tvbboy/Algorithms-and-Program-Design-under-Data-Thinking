@@ -10,6 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:TextBox ID="txtNum" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="btnFact" runat="server" OnClick="btnFact_Click" Text="计算阶乘" />
         </div>
     </form>
 </body>

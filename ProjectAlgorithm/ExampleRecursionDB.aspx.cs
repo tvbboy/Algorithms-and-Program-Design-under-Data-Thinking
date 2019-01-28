@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using SQL;
+using System;
 using System.Data;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using SQL;
 namespace ProjectAlgorithm
 {
     public partial class ExampleRecursionDB : System.Web.UI.Page
@@ -26,13 +21,10 @@ namespace ProjectAlgorithm
                 count = 0;
                 PrintFather("035");//输出刘备的谱系
                 Response.Write(string.Format("总共{0}代</br>", count));
-
                 count = 0;
                 PrintFather("011");//输出刘秀的谱系
                 Response.Write(string.Format("总共{0}代</br>", count));
-                
             }
-            
         }
         private void PrintFather(string EID)
         {
@@ -43,13 +35,10 @@ namespace ProjectAlgorithm
             DataRow[] rows = dt.Select(condition);
             if (rows.Length > 0)
             {
-                
                 PrintFather(rows[0]["EPARENTID"].ToString());
                 Response.Write(rows[0]["ENAME"].ToString() + "</br>");
                 count++;
             }
-            
-
         }
     }
 }

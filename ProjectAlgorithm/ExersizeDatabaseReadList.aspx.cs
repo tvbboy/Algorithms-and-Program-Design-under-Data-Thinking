@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using SQL;
-using System.Data.SqlClient;
+﻿using SQL;
+using System;
 using System.Data;
 
 namespace ProjectAlgorithm
@@ -27,10 +21,17 @@ namespace ProjectAlgorithm
                     dt = ds.Tables[0];
                     if (dt.Rows.Count > 0)
                     {
+                        //下面4行代码可以使得下拉列表增加一个默认选项
+                        DataRow dr = dt.NewRow();
+                        dr["c_dynasty_chn"] = "请选择";
+                        dr["c_dy"] = "-1";
+                        dt.Rows.Add(dr);
                         ddlDynasties.DataTextField = "c_dynasty_chn";
                         ddlDynasties.DataValueField = "c_dy";
                         ddlDynasties.DataSource = dt;
                         ddlDynasties.DataBind();
+                        //下面1行代码可以设置下来列表默认选中的项目
+                        ddlDynasties.SelectedIndex = dt.Rows.Count - 1;
                     }
                 }
             }
