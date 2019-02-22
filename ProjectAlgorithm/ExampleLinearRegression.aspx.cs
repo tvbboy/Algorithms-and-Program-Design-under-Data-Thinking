@@ -1,10 +1,5 @@
 ﻿using Common.AITools.Tvbboy;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ProjectAlgorithm
 {
@@ -19,10 +14,14 @@ namespace ProjectAlgorithm
             array[3] = new Point(2014, 39000);
             array[4] = new Point(2015, 40000);
             array[5] = new Point(2016, 40500);
-            //LinearRegression(array);
+           // LinearRegression(array);
             MultiLineRegression(array);
         }
-        public  void LinearRegression(Point[] parray)
+        /// <summary>
+        /// 通过最小二乘法进行线性一次方程的拟合 
+        /// </summary>
+        /// <param name="parray"></param>
+        public void LinearRegression(Point[] parray)
         {
             //点数不能小于2
             if (parray.Length < 2)
@@ -55,8 +54,7 @@ namespace ProjectAlgorithm
             Response.Write("回归系数B： " + RCB.ToString("0.0000"));
             Response.Write(string.Format("线性回归方程为： y = {0} + {1} * x",
               RCA.ToString("0.0000"), RCB.ToString("0.0000")));
-          
-        }
+         }
         /// <summary>
         ///通过最小二乘法进行二次方程的拟合 
         /// </summary>

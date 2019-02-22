@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Common.AITools.Tvbboy;
+﻿using Common.AITools.Tvbboy;
+using System;
 namespace ProjectAlgorithm
 {
     /// <summary>
@@ -16,7 +11,6 @@ namespace ProjectAlgorithm
         protected void Page_Load(object sender, EventArgs e)
         {
             Response.Write("\n开始 k-means 聚类（clustering）\n");
-
             // real data likely to come from a text file or SQL
             // 需要聚类的数据是两个维度，具体指某个人的身高体重
             //集合中每项描述了一个人的身高（Height: inches）和体重（Weight: kilograms）
@@ -59,9 +53,6 @@ namespace ProjectAlgorithm
 
             Response.Write("原始数据被聚类之后的结果:<br>");
             ShowClustered(rawData, clustering, numClusters, 1);
-
-            //Response.Write("\nEnd k-means clustering demo\n");
-           
         }
         /// <summary>
         ///  用来显示二维的数据
@@ -113,7 +104,7 @@ namespace ProjectAlgorithm
                 }
                 Response.Write("===================</br>");
             }
-      }
+        }
    
     }
 }
