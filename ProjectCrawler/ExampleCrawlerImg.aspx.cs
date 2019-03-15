@@ -18,7 +18,7 @@ namespace ProjectCrawler
             
         }
         /// <summary>
-        /// 抓取超链接
+        /// 抓取图片
         /// </summary>
         public void IMGCrawler()
         {
@@ -56,11 +56,7 @@ namespace ProjectCrawler
                 };
 
             imgCrawler.start();
-            
-            
-           
-
-
+          
         }
 
     }

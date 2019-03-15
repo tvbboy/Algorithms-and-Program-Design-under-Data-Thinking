@@ -87,8 +87,8 @@
     <Reference Include="FiddlerCore4, Version=4.6.2.0, Culture=neutral, PublicKeyToken=67cb91587178ac5a, processorArchitecture=MSIL">
       <HintPath>..\packages\FiddlerCore2.1.0.0\lib\net40\FiddlerCore4.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPack, Version=1.8.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\packages\HtmlAgilityPack.1.8.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.9.1.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.9.1\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="LZ4, Version=1.0.10.93, Culture=neutral, PublicKeyToken=62e1b5ec1eec9bdd, processorArchitecture=MSIL">
       <HintPath>..\packages\lz4net.1.0.10.93\lib\net4-client\LZ4.dll</HintPath>
@@ -203,6 +203,7 @@
     <Content Include="CrawlerLink.aspx" />
     <Content Include="ExampleCrawLink.aspx" />
     <Content Include="ExampleDazhong.aspx" />
+    <Content Include="ExampleDazhongEnglishTraing.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -242,6 +243,13 @@
     </Compile>
     <Compile Include="ExampleDazhong.aspx.designer.cs">
       <DependentUpon>ExampleDazhong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDazhongEnglishTraing.aspx.cs">
+      <DependentUpon>ExampleDazhongEnglishTraing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleDazhongEnglishTraing.aspx.designer.cs">
+      <DependentUpon>ExampleDazhongEnglishTraing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

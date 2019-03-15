@@ -5,11 +5,14 @@
 <html>
     <head>
         <meta charset="utf-8">
+        
+        <!-- <script src="scripts/echarts/echarts.js"></script>-->
         <script src="js/esl.js"></script>
         <script src="js/config.js"></script>
         <script src="js/jquery.min.js"></script>
     </head>
     <body>
+        
         <style>
             html, body, #main {
                 width: 100%;
@@ -19,7 +22,7 @@
         </style>
         <div id="main"></div>
         <script>
-
+            //关于Echarts的模块化单文件引入和标签式单文件引入https://www.cnblogs.com/qiutianlaile/p/4892489.html
             require([
                 'echarts'
             ], function (echarts) {

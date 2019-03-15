@@ -1,18 +1,11 @@
 ﻿using Common.AITools.Tvbboy;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace ProjectCrawler
 {
     //https://jingyan.baidu.com/article/7e44095334bb162fc0e2efad.html
-    
+
     //https://www.cnblogs.com/soundcode/p/3785152.html
     public partial class ExampleDazhong : System.Web.UI.Page
     {
@@ -50,7 +43,8 @@ User-Agent:Mozilla/5.0 (Windows NT 10.0; …) Gecko/20100101 Firefox/60.0";
             foreach (HtmlAgilityPack.HtmlNode item in collection)
             {
                 HtmlAgilityPack.HtmlNode divtit = item.SelectNodes("div[@class=\"tit\"]")[0];
-                        HtmlAgilityPack.HtmlNode aname = divtit.SelectNodes("a[1]")[0]; //divtit下面的第一个超级链接
+                HtmlAgilityPack.HtmlNode aname = divtit.SelectNodes("a[1]")[0]; //divtit下面的第一个超级链接
+
                 HtmlAgilityPack.HtmlNode divcomment = item.SelectNodes("div[@class=\"comment\"]")[0];
                     HtmlAgilityPack.HtmlNode anum = divcomment.SelectNodes("a[1]")[0]; //divcomment下面的第一个超级链接
                     HtmlAgilityPack.HtmlNode aprice = divcomment.SelectNodes("a[2]")[0];//divcomment下面的第二个超级链接

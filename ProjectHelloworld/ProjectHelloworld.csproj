@@ -75,11 +75,61 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="checkEmail.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="getCircleSqure.aspx" />
+    <Content Include="getDay.aspx" />
+    <Content Include="getMax.aspx" />
+    <Content Include="getWeek.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HelloWorld.aspx" />
+    <Content Include="homeworkGetTriangularArea.aspx" />
+    <Content Include="homeworkOutput.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="checkEmail.aspx.cs">
+      <DependentUpon>checkEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkEmail.aspx.designer.cs">
+      <DependentUpon>checkEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getCircleSqure.aspx.cs">
+      <DependentUpon>getCircleSqure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getCircleSqure.aspx.designer.cs">
+      <DependentUpon>getCircleSqure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getDay.aspx.cs">
+      <DependentUpon>getDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getDay.aspx.designer.cs">
+      <DependentUpon>getDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getMax.aspx.cs">
+      <DependentUpon>getMax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getMax.aspx.designer.cs">
+      <DependentUpon>getMax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getWeek.aspx.cs">
+      <DependentUpon>getWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getWeek.aspx.designer.cs">
+      <DependentUpon>getWeek.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -89,6 +139,20 @@
     </Compile>
     <Compile Include="HelloWorld.aspx.designer.cs">
       <DependentUpon>HelloWorld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkGetTriangularArea.aspx.cs">
+      <DependentUpon>homeworkGetTriangularArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkGetTriangularArea.aspx.designer.cs">
+      <DependentUpon>homeworkGetTriangularArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkOutput.aspx.cs">
+      <DependentUpon>homeworkOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkOutput.aspx.designer.cs">
+      <DependentUpon>homeworkOutput.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
