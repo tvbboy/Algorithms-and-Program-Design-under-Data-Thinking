@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleDatabaseReadList.aspx.cs" Inherits="ProjectAlgorithm.ExampleDatabaseReadList" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleDatabaseBindDDL.aspx.cs" Inherits="ProjectAlgorithm.ExampleDatabaseBindDDL" %>
 
 <!DOCTYPE html>
 
@@ -10,6 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:DropDownList ID="ddlDynasties" runat="server">
+            </asp:DropDownList>
         </div>
     </form>
 </body>

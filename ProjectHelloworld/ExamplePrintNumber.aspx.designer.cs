@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProjectAlgorithm
+namespace ProjectHelloworld
 {
 
 
-    public partial class ExampleDatabaseReadList
+    public partial class ExamplePrintNumber
     {
 
         /// <summary>

@@ -75,25 +75,39 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="checkEmail.aspx" />
+    <Content Include="ExampleCheckEmail.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="getCircleSqure.aspx" />
-    <Content Include="getDay.aspx" />
-    <Content Include="getMax.aspx" />
-    <Content Include="getWeek.aspx" />
+    <Content Include="ExampleChrCage1.aspx" />
+    <Content Include="ExampleChrCage.aspx" />
+    <Content Include="ExampleDropdownListFromDatatable.aspx" />
+    <Content Include="ExampleGetCuSum.aspx" />
+    <Content Include="ExampleGetMaxFunction.aspx" />
+    <Content Include="ExampleGetOneNumber.aspx" />
+    <Content Include="ExamplePrime.aspx" />
+    <Content Include="ExamplePrintNumber.aspx" />
+    <Content Include="ExamplePrintTriangle.aspx" />
+    <Content Include="ExampleTry.aspx" />
+    <Content Include="homeworkGetCircleSqure.aspx" />
+    <Content Include="ExampleGetDay.aspx" />
+    <Content Include="ExampleGetMax.aspx" />
+    <Content Include="ExampleGetWeek.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HelloWorld.aspx" />
     <Content Include="homeworkGetTriangularArea.aspx" />
+    <Content Include="homeworkID.aspx" />
     <Content Include="homeworkOutput.aspx" />
+    <Content Include="homeworkPrintChar.aspx" />
+    <Content Include="homeworkSqrt.aspx" />
+    <Content Include="homeworkStringOffset.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="checkEmail.aspx.cs">
-      <DependentUpon>checkEmail.aspx</DependentUpon>
+    <Compile Include="ExampleCheckEmail.aspx.cs">
+      <DependentUpon>ExampleCheckEmail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="checkEmail.aspx.designer.cs">
-      <DependentUpon>checkEmail.aspx</DependentUpon>
+    <Compile Include="ExampleCheckEmail.aspx.designer.cs">
+      <DependentUpon>ExampleCheckEmail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -102,33 +116,103 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="getCircleSqure.aspx.cs">
-      <DependentUpon>getCircleSqure.aspx</DependentUpon>
+    <Compile Include="ExampleChrCage1.aspx.cs">
+      <DependentUpon>ExampleChrCage1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="getCircleSqure.aspx.designer.cs">
-      <DependentUpon>getCircleSqure.aspx</DependentUpon>
+    <Compile Include="ExampleChrCage1.aspx.designer.cs">
+      <DependentUpon>ExampleChrCage1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="getDay.aspx.cs">
-      <DependentUpon>getDay.aspx</DependentUpon>
+    <Compile Include="ExampleChrCage.aspx.cs">
+      <DependentUpon>ExampleChrCage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="getDay.aspx.designer.cs">
-      <DependentUpon>getDay.aspx</DependentUpon>
+    <Compile Include="ExampleChrCage.aspx.designer.cs">
+      <DependentUpon>ExampleChrCage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="getMax.aspx.cs">
-      <DependentUpon>getMax.aspx</DependentUpon>
+    <Compile Include="ExampleDropdownListFromDatatable.aspx.cs">
+      <DependentUpon>ExampleDropdownListFromDatatable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="getMax.aspx.designer.cs">
-      <DependentUpon>getMax.aspx</DependentUpon>
+    <Compile Include="ExampleDropdownListFromDatatable.aspx.designer.cs">
+      <DependentUpon>ExampleDropdownListFromDatatable.aspx</DependentUpon>
     </Compile>
-    <Compile Include="getWeek.aspx.cs">
-      <DependentUpon>getWeek.aspx</DependentUpon>
+    <Compile Include="ExampleGetCuSum.aspx.cs">
+      <DependentUpon>ExampleGetCuSum.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="getWeek.aspx.designer.cs">
-      <DependentUpon>getWeek.aspx</DependentUpon>
+    <Compile Include="ExampleGetCuSum.aspx.designer.cs">
+      <DependentUpon>ExampleGetCuSum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleGetMaxFunction.aspx.cs">
+      <DependentUpon>ExampleGetMaxFunction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleGetMaxFunction.aspx.designer.cs">
+      <DependentUpon>ExampleGetMaxFunction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleGetOneNumber.aspx.cs">
+      <DependentUpon>ExampleGetOneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleGetOneNumber.aspx.designer.cs">
+      <DependentUpon>ExampleGetOneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamplePrime.aspx.cs">
+      <DependentUpon>ExamplePrime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamplePrime.aspx.designer.cs">
+      <DependentUpon>ExamplePrime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamplePrintNumber.aspx.cs">
+      <DependentUpon>ExamplePrintNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamplePrintNumber.aspx.designer.cs">
+      <DependentUpon>ExamplePrintNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamplePrintTriangle.aspx.cs">
+      <DependentUpon>ExamplePrintTriangle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamplePrintTriangle.aspx.designer.cs">
+      <DependentUpon>ExamplePrintTriangle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleTry.aspx.cs">
+      <DependentUpon>ExampleTry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleTry.aspx.designer.cs">
+      <DependentUpon>ExampleTry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkGetCircleSqure.aspx.cs">
+      <DependentUpon>homeworkGetCircleSqure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkGetCircleSqure.aspx.designer.cs">
+      <DependentUpon>homeworkGetCircleSqure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleGetDay.aspx.cs">
+      <DependentUpon>ExampleGetDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleGetDay.aspx.designer.cs">
+      <DependentUpon>ExampleGetDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleGetMax.aspx.cs">
+      <DependentUpon>ExampleGetMax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleGetMax.aspx.designer.cs">
+      <DependentUpon>ExampleGetMax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleGetWeek.aspx.cs">
+      <DependentUpon>ExampleGetWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleGetWeek.aspx.designer.cs">
+      <DependentUpon>ExampleGetWeek.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -147,12 +231,40 @@
     <Compile Include="homeworkGetTriangularArea.aspx.designer.cs">
       <DependentUpon>homeworkGetTriangularArea.aspx</DependentUpon>
     </Compile>
+    <Compile Include="homeworkID.aspx.cs">
+      <DependentUpon>homeworkID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkID.aspx.designer.cs">
+      <DependentUpon>homeworkID.aspx</DependentUpon>
+    </Compile>
     <Compile Include="homeworkOutput.aspx.cs">
       <DependentUpon>homeworkOutput.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="homeworkOutput.aspx.designer.cs">
       <DependentUpon>homeworkOutput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkPrintChar.aspx.cs">
+      <DependentUpon>homeworkPrintChar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkPrintChar.aspx.designer.cs">
+      <DependentUpon>homeworkPrintChar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkSqrt.aspx.cs">
+      <DependentUpon>homeworkSqrt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkSqrt.aspx.designer.cs">
+      <DependentUpon>homeworkSqrt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeworkStringOffset.aspx.cs">
+      <DependentUpon>homeworkStringOffset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeworkStringOffset.aspx.designer.cs">
+      <DependentUpon>homeworkStringOffset.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -13,7 +13,7 @@
             请输入一个唐朝人物 
          
             <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="查找" />
+            <asp:Button ID="btnSearch" runat="server" Text="查找" OnClick="btnSearch_Click" />
         </div>
     </form>
 </body>

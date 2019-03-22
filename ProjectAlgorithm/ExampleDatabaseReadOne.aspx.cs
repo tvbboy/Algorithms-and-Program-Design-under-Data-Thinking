@@ -11,14 +11,15 @@ namespace ProjectAlgorithm
         protected void Page_Load(object sender, EventArgs e)
         {                      
         }
-        protected void Button1_Click(object sender, EventArgs e)
+        
+        protected void btnSearch_Click(object sender, EventArgs e)
         {
             string pname = txtName.Text;
             string result = string.Empty;
             if (pname.Length < 1)
             {
                 Response.Write("请输入一个人名！");
-               return;
+                return;
             }
             string sql = string.Format("select c_personid,c_name,c_name_chn,c_birthyear,c_deathyear from biog_main where C_NAME_CHN = '{0}'", pname);
             //string sql = "select c_personid,c_name,c_name_chn,c_birthyear,c_deathyear from biog_main where C_NAME_CHN = '李世民'";

@@ -84,8 +84,6 @@
     <Content Include="ExampleDatabaseReadList.aspx" />
     <Content Include="ExampleDatabaseReadOne.aspx" />
     <Content Include="ExampleDijkstraCity.aspx" />
-    <Content Include="ExampleDropdownListFromDatatable.aspx" />
-    <Content Include="ExampleGetMax.aspx" />
     <Content Include="ExampleKmeans.aspx" />
     <Content Include="ExampleLinearRegression.aspx" />
     <Content Include="ExampleMonteCarloIntegration.aspx" />
@@ -97,8 +95,7 @@
     <Content Include="ExampleRecursionFabi.aspx" />
     <Content Include="ExampleRecursionFact.aspx" />
     <Content Include="ExampleRecursionDB.aspx" />
-    <Content Include="ExampleTry.aspx" />
-    <Content Include="ExersizeDatabaseReadList.aspx" />
+    <Content Include="ExampleDatabaseBindDDL.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HomeworkDijkstra.aspx" />
     <Content Include="MonteCarloProduct.aspx" />
@@ -140,20 +137,6 @@
     </Compile>
     <Compile Include="ExampleDijkstraCity.aspx.designer.cs">
       <DependentUpon>ExampleDijkstraCity.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ExampleDropdownListFromDatatable.aspx.cs">
-      <DependentUpon>ExampleDropdownListFromDatatable.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExampleDropdownListFromDatatable.aspx.designer.cs">
-      <DependentUpon>ExampleDropdownListFromDatatable.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ExampleGetMax.aspx.cs">
-      <DependentUpon>ExampleGetMax.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExampleGetMax.aspx.designer.cs">
-      <DependentUpon>ExampleGetMax.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleKmeans.aspx.cs">
       <DependentUpon>ExampleKmeans.aspx</DependentUpon>
@@ -232,19 +215,12 @@
     <Compile Include="ExampleRecursionDB.aspx.designer.cs">
       <DependentUpon>ExampleRecursionDB.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExampleTry.aspx.cs">
-      <DependentUpon>ExampleTry.aspx</DependentUpon>
+    <Compile Include="ExampleDatabaseBindDDL.aspx.cs">
+      <DependentUpon>ExampleDatabaseBindDDL.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExampleTry.aspx.designer.cs">
-      <DependentUpon>ExampleTry.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ExersizeDatabaseReadList.aspx.cs">
-      <DependentUpon>ExersizeDatabaseReadList.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExersizeDatabaseReadList.aspx.designer.cs">
-      <DependentUpon>ExersizeDatabaseReadList.aspx</DependentUpon>
+    <Compile Include="ExampleDatabaseBindDDL.aspx.designer.cs">
+      <DependentUpon>ExampleDatabaseBindDDL.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

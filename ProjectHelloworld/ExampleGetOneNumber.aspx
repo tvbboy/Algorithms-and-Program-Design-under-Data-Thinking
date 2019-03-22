@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleDatabaseReadList.aspx.cs" Inherits="ProjectAlgorithm.ExampleDatabaseReadList" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleGetOneNumber.aspx.cs" Inherits="ProjectHelloworld.ExampleGetOneNumber" %>
 
 <!DOCTYPE html>
 
