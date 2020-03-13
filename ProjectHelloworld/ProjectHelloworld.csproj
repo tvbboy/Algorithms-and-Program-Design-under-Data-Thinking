@@ -1,6 +1,6 @@
 ﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
-  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.3.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.4.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,8 +44,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
@@ -87,18 +87,13 @@
     <Content Include="ExamplePrintNumber.aspx" />
     <Content Include="ExamplePrintTriangle.aspx" />
     <Content Include="ExampleTry.aspx" />
-    <Content Include="homeworkGetCircleSqure.aspx" />
     <Content Include="ExampleGetDay.aspx" />
     <Content Include="ExampleGetMax.aspx" />
     <Content Include="ExampleGetWeek.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HelloWorld.aspx" />
     <Content Include="homeworkGetTriangularArea.aspx" />
-    <Content Include="homeworkID.aspx" />
     <Content Include="homeworkOutput.aspx" />
-    <Content Include="homeworkPrintChar.aspx" />
-    <Content Include="homeworkSqrt.aspx" />
-    <Content Include="homeworkStringOffset.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -186,13 +181,6 @@
     <Compile Include="ExampleTry.aspx.designer.cs">
       <DependentUpon>ExampleTry.aspx</DependentUpon>
     </Compile>
-    <Compile Include="homeworkGetCircleSqure.aspx.cs">
-      <DependentUpon>homeworkGetCircleSqure.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="homeworkGetCircleSqure.aspx.designer.cs">
-      <DependentUpon>homeworkGetCircleSqure.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ExampleGetDay.aspx.cs">
       <DependentUpon>ExampleGetDay.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -231,40 +219,12 @@
     <Compile Include="homeworkGetTriangularArea.aspx.designer.cs">
       <DependentUpon>homeworkGetTriangularArea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="homeworkID.aspx.cs">
-      <DependentUpon>homeworkID.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="homeworkID.aspx.designer.cs">
-      <DependentUpon>homeworkID.aspx</DependentUpon>
-    </Compile>
     <Compile Include="homeworkOutput.aspx.cs">
       <DependentUpon>homeworkOutput.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="homeworkOutput.aspx.designer.cs">
       <DependentUpon>homeworkOutput.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="homeworkPrintChar.aspx.cs">
-      <DependentUpon>homeworkPrintChar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="homeworkPrintChar.aspx.designer.cs">
-      <DependentUpon>homeworkPrintChar.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="homeworkSqrt.aspx.cs">
-      <DependentUpon>homeworkSqrt.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="homeworkSqrt.aspx.designer.cs">
-      <DependentUpon>homeworkSqrt.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="homeworkStringOffset.aspx.cs">
-      <DependentUpon>homeworkStringOffset.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="homeworkStringOffset.aspx.designer.cs">
-      <DependentUpon>homeworkStringOffset.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -301,8 +261,8 @@
     <PropertyGroup>
       <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.3.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.3.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
