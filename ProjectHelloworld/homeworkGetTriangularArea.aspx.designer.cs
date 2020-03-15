@@ -7,11 +7,13 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace ProjectHelloworld {
-    
-    
-    public partial class homeworkGetTriangularArea {
-        
+namespace HelloWorld
+{
+
+
+    public partial class homeTriangularArea
+    {
+
         /// <summary>
         /// form1 控件。
         /// </summary>
@@ -20,41 +22,41 @@ namespace ProjectHelloworld {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
-        /// txtA 控件。
+        /// TextBox_1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtA;
-        
+        protected global::System.Web.UI.WebControls.TextBox TextBox_1;
+
         /// <summary>
-        /// txtB 控件。
+        /// TextBox_2 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtB;
-        
+        protected global::System.Web.UI.WebControls.TextBox TextBox_2;
+
         /// <summary>
-        /// txtC 控件。
+        /// TextBox_3 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtC;
-        
+        protected global::System.Web.UI.WebControls.TextBox TextBox_3;
+
         /// <summary>
-        /// btnGetS 控件。
+        /// Button_1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGetS;
+        protected global::System.Web.UI.WebControls.Button Button_1;
     }
 }

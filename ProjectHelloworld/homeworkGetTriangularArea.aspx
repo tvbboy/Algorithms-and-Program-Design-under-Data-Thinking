@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homeworkGetTriangularArea.aspx.cs" Inherits="ProjectHelloworld.homeworkGetTriangularArea" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homeworkGetTriangularArea.aspx.cs" Inherits="HelloWorld.homeTriangularArea" %>
 
 <!DOCTYPE html>
 
@@ -10,14 +10,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            请输入三角形的三条边：<br />
-            a<asp:TextBox ID="txtA" runat="server"></asp:TextBox>
-            <br />
-            b<asp:TextBox ID="txtB" runat="server"></asp:TextBox>
-            <br />
-            c<asp:TextBox ID="txtC" runat="server"></asp:TextBox>
-            <br />
-            <asp:Button ID="btnGetS" runat="server" OnClick="btnGetS_Click" Text="求三角形面积" />
+        <p>请输入第一条边长：</p><asp:TextBox id='TextBox_1' OnTextChanged="TextBox1_TextChanged" runat="server" />
+        <br />
+        <p>请输入第二条边长：</p><asp:TextBox id='TextBox_2' OnTextChanged="TextBox1_TextChanged" runat="server" />
+        <br />
+        <p>请输入第三条边长：</p><asp:TextBox id='TextBox_3' OnTextChanged="TextBox1_TextChanged" runat="server" />
+        <br />
+        <br />
+        <asp:Button ID="Button_1" Text="求三角形面积" OnClick="Button1_Click" runat="server" />
         </div>
     </form>
 </body>
