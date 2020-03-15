@@ -30,7 +30,7 @@ namespace ProjectHelloworld
             }
             bool isPrime = false;
             Response.Write("找到的素数如下：<br>");
-            for (int i = start; i <= end; i++)
+            for (int i = Math.Max(start, 2); i <= end; i++)
             {
                 int j = 2;//整除因子从2开始
                 isPrime = true;
