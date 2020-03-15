@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace HelloWorld
+namespace ProjectHelloWorld
 {
-    public partial class homeTriangularArea : System.Web.UI.Page
+    public partial class homeworkTriangularArea : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,12 +17,10 @@ namespace HelloWorld
         {
 
         }
-
         protected void TextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
-
         protected void TextBox3_TextChanged(object sender, EventArgs e)
         {
 
@@ -31,9 +29,9 @@ namespace HelloWorld
         {
             //初始化
             double m = 0;
-            double a = double.Parse(TextBox_1.Text);
-            double b = double.Parse(TextBox_2.Text);
-            double c = double.Parse(TextBox_3.Text);
+            double a = double.Parse(TextBox1.Text);
+            double b = double.Parse(TextBox2.Text);
+            double c = double.Parse(TextBox3.Text);
             string error_msg = "你输入的三条边不能构成1个三角形";
             string right_msg_1 = "你输入的三条边组成了一个";
             string tri_type = "";

@@ -10,14 +10,14 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        <p>请输入第一条边长：</p><asp:TextBox id='TextBox_1' OnTextChanged="TextBox1_TextChanged" runat="server" />
+        <p>请输入第一条边长：</p><asp:TextBox id='TextBox1' OnTextChanged="TextBox1_TextChanged" runat="server" />
         <br />
-        <p>请输入第二条边长：</p><asp:TextBox id='TextBox_2' OnTextChanged="TextBox1_TextChanged" runat="server" />
+        <p>请输入第二条边长：</p><asp:TextBox id='TextBox2' OnTextChanged="TextBox1_TextChanged" runat="server" />
         <br />
-        <p>请输入第三条边长：</p><asp:TextBox id='TextBox_3' OnTextChanged="TextBox1_TextChanged" runat="server" />
+        <p>请输入第三条边长：</p><asp:TextBox id='TextBox3' OnTextChanged="TextBox1_TextChanged" runat="server" />
         <br />
         <br />
-        <asp:Button ID="Button_1" Text="求三角形面积" OnClick="Button1_Click" runat="server" />
+        <asp:Button ID="Button1" Text="求三角形面积" OnClick="Button1_Click" runat="server" />
         </div>
     </form>
 </body>
