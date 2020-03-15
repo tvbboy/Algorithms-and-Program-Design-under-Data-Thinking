@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ProjectHelloWorld
+namespace ProjectHelloworld
 {
-    public partial class homeworkTriangularArea : System.Web.UI.Page
+    public partial class homeworkGetTriangularArea : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
