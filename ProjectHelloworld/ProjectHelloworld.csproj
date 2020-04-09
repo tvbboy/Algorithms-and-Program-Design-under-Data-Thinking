@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Framework.Tvbboy">
+      <HintPath>dll\Common.Framework.Tvbboy.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -94,6 +97,9 @@
     <Content Include="HelloWorld.aspx" />
     <Content Include="homeworkGetTriangularArea.aspx" />
     <Content Include="homeworkOutput.aspx" />
+    <Content Include="insertOne.aspx" />
+    <Content Include="testDB.aspx" />
+    <Content Include="updateOne.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -226,7 +232,29 @@
     <Compile Include="homeworkOutput.aspx.designer.cs">
       <DependentUpon>homeworkOutput.aspx</DependentUpon>
     </Compile>
+    <Compile Include="insertOne.aspx.cs">
+      <DependentUpon>insertOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="insertOne.aspx.designer.cs">
+      <DependentUpon>insertOne.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLHelper.cs" />
+    <Compile Include="testDB.aspx.cs">
+      <DependentUpon>testDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testDB.aspx.designer.cs">
+      <DependentUpon>testDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateOne.aspx.cs">
+      <DependentUpon>updateOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateOne.aspx.designer.cs">
+      <DependentUpon>updateOne.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
