@@ -7,11 +7,11 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace HelloWorld
+namespace ProjectHelloworld
 {
 
 
-    public partial class homeTriangularArea
+    public partial class homeworkGetTriangularArea
     {
 
         /// <summary>

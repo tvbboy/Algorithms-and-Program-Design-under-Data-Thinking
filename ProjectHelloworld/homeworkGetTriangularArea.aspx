@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homeworkGetTriangularArea.aspx.cs" Inherits="HelloWorld.homeTriangularArea" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="homeworkGetTriangularArea.aspx.cs" Inherits="ProjectHelloworld.homeworkGetTriangularArea" %>
 
 <!DOCTYPE html>
 
