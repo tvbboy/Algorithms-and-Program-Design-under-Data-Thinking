@@ -9,6 +9,8 @@ namespace ProjectAlgorithm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            //entry_code=113意味着弑君当上帝王的人
             string sql = string.Format("select B.c_personid AS c_personid,B.c_name_chn from ENTRY_DATA A ,BIOG_MAIN B where A.c_personid = B.c_personid AND c_entry_code = 113");
             SQLHelper sh = new SQLHelper();
             SqlDataReader sdr;            

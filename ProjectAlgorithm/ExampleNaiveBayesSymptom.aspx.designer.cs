@@ -7,7 +7,7 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace MyProject {
+namespace ProjectAlgorithm {
     
     
     public partial class ExampleNaiveBayesSymptom {

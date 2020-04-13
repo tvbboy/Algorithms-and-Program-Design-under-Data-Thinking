@@ -10,11 +10,13 @@ namespace ProjectEchart
 {
     public partial class ExampleGeoMapLabel : System.Web.UI.Page
     {
+        
         public DataTable dt;
         public string jsstirng = "";
         public string jsli = "";
        protected void Page_Load(object sender, EventArgs e)
         {
+            
             SQLHelper sh = new SQLHelper();
             string sql = "select b.c_name_chn as c_name_chn, c.c_addr_id,c.x_coord as x_coord ,c.y_coord as y_coord from biog_addr_data A,biog_main B,ADDR_CODES c";
             sql+=" where A.c_personid = B.c_personid AND c.c_addr_id = a.c_addr_id and ";
@@ -38,7 +40,7 @@ namespace ProjectEchart
             }
             catch (Exception ex)
             {
-                Response.Write("数据库出错");
+                Response.Write("数据库出错"+ex.Message);
             }
             finally
             {

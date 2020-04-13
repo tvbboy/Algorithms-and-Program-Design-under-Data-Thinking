@@ -79,30 +79,58 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ExampleBasicStatisticsPpcc.aspx" />
+    <Content Include="ExampleBasicStatisticsCov.aspx" />
     <Content Include="ExampleBasicStatistics.aspx" />
-    <Content Include="ExampleDatabase.aspx" />
+    <Content Include="ExampleDatabaseBindGridView.aspx" />
     <Content Include="ExampleDatabaseReadList.aspx" />
+    <Content Include="ExampleDatabaseInsertOne.aspx" />
     <Content Include="ExampleDatabaseReadOne.aspx" />
     <Content Include="ExampleDijkstraCity.aspx" />
+    <Content Include="ExampleKnnHelen.aspx" />
     <Content Include="ExampleKmeans.aspx" />
+    <Content Include="ExampleKnnMovie.aspx" />
+    <Content Include="ExampleMonteCarloIntegratorSinx.aspx" />
+    <Content Include="ExampleMultiLineRegression.aspx" />
     <Content Include="ExampleLinearRegression.aspx" />
     <Content Include="ExampleMonteCarloIntegration.aspx" />
     <Content Include="ExampleMonteCarloPi.aspx" />
     <Content Include="ExampleMonteCarloProduct.aspx" />
-    <Content Include="ExampleNaiveBayes.aspx" />
     <Content Include="ExampleNaiveBayesSymptom.aspx" />
+    <Content Include="ExampleNormalization.aspx" />
     <Content Include="ExampleRandom.aspx" />
     <Content Include="ExampleRecursionFabi.aspx" />
     <Content Include="ExampleRecursionFact.aspx" />
     <Content Include="ExampleRecursionDB.aspx" />
     <Content Include="ExampleDatabaseBindDDL.aspx" />
+    <Content Include="ExampleStatisticsPulmonary.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="HomeworkBasicStatisticsStudent.aspx" />
+    <Content Include="HomeworkDatabaseDDL.aspx" />
     <Content Include="HomeworkDijkstra.aspx" />
+    <Content Include="HomeworkMonteCarloFootball.aspx" />
+    <Content Include="HomeworkRandom.aspx" />
     <Content Include="MonteCarloProduct.aspx" />
-    <Content Include="MonteCarloIntegral.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="HomwworkMonteCarloIntegral.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExampleBasicStatisticsPpcc.aspx.cs">
+      <DependentUpon>ExampleBasicStatisticsPpcc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleBasicStatisticsPpcc.aspx.designer.cs">
+      <DependentUpon>ExampleBasicStatisticsPpcc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleBasicStatisticsCov.aspx.cs">
+      <DependentUpon>ExampleBasicStatisticsCov.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleBasicStatisticsCov.aspx.designer.cs">
+      <DependentUpon>ExampleBasicStatisticsCov.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleBasicStatistics.aspx.cs">
       <DependentUpon>ExampleBasicStatistics.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -110,12 +138,12 @@
     <Compile Include="ExampleBasicStatistics.aspx.designer.cs">
       <DependentUpon>ExampleBasicStatistics.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExampleDatabase.aspx.cs">
-      <DependentUpon>ExampleDatabase.aspx</DependentUpon>
+    <Compile Include="ExampleDatabaseBindGridView.aspx.cs">
+      <DependentUpon>ExampleDatabaseBindGridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ExampleDatabase.aspx.designer.cs">
-      <DependentUpon>ExampleDatabase.aspx</DependentUpon>
+    <Compile Include="ExampleDatabaseBindGridView.aspx.designer.cs">
+      <DependentUpon>ExampleDatabaseBindGridView.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleDatabaseReadList.aspx.cs">
       <DependentUpon>ExampleDatabaseReadList.aspx</DependentUpon>
@@ -123,6 +151,13 @@
     </Compile>
     <Compile Include="ExampleDatabaseReadList.aspx.designer.cs">
       <DependentUpon>ExampleDatabaseReadList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleDatabaseInsertOne.aspx.cs">
+      <DependentUpon>ExampleDatabaseInsertOne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleDatabaseInsertOne.aspx.designer.cs">
+      <DependentUpon>ExampleDatabaseInsertOne.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleDatabaseReadOne.aspx.cs">
       <DependentUpon>ExampleDatabaseReadOne.aspx</DependentUpon>
@@ -138,12 +173,40 @@
     <Compile Include="ExampleDijkstraCity.aspx.designer.cs">
       <DependentUpon>ExampleDijkstraCity.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExampleKnnHelen.aspx.cs">
+      <DependentUpon>ExampleKnnHelen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleKnnHelen.aspx.designer.cs">
+      <DependentUpon>ExampleKnnHelen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExampleKmeans.aspx.cs">
       <DependentUpon>ExampleKmeans.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExampleKmeans.aspx.designer.cs">
       <DependentUpon>ExampleKmeans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleKnnMovie.aspx.cs">
+      <DependentUpon>ExampleKnnMovie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleKnnMovie.aspx.designer.cs">
+      <DependentUpon>ExampleKnnMovie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleMonteCarloIntegratorSinx.aspx.cs">
+      <DependentUpon>ExampleMonteCarloIntegratorSinx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleMonteCarloIntegratorSinx.aspx.designer.cs">
+      <DependentUpon>ExampleMonteCarloIntegratorSinx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleMultiLineRegression.aspx.cs">
+      <DependentUpon>ExampleMultiLineRegression.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleMultiLineRegression.aspx.designer.cs">
+      <DependentUpon>ExampleMultiLineRegression.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleLinearRegression.aspx.cs">
       <DependentUpon>ExampleLinearRegression.aspx</DependentUpon>
@@ -173,19 +236,19 @@
     <Compile Include="ExampleMonteCarloProduct.aspx.designer.cs">
       <DependentUpon>ExampleMonteCarloProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExampleNaiveBayes.aspx.cs">
-      <DependentUpon>ExampleNaiveBayes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ExampleNaiveBayes.aspx.designer.cs">
-      <DependentUpon>ExampleNaiveBayes.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ExampleNaiveBayesSymptom.aspx.cs">
       <DependentUpon>ExampleNaiveBayesSymptom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExampleNaiveBayesSymptom.aspx.designer.cs">
       <DependentUpon>ExampleNaiveBayesSymptom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleNormalization.aspx.cs">
+      <DependentUpon>ExampleNormalization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleNormalization.aspx.designer.cs">
+      <DependentUpon>ExampleNormalization.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleRandom.aspx.cs">
       <DependentUpon>ExampleRandom.aspx</DependentUpon>
@@ -222,8 +285,29 @@
     <Compile Include="ExampleDatabaseBindDDL.aspx.designer.cs">
       <DependentUpon>ExampleDatabaseBindDDL.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExampleStatisticsPulmonary.aspx.cs">
+      <DependentUpon>ExampleStatisticsPulmonary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleStatisticsPulmonary.aspx.designer.cs">
+      <DependentUpon>ExampleStatisticsPulmonary.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkBasicStatisticsStudent.aspx.cs">
+      <DependentUpon>HomeworkBasicStatisticsStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkBasicStatisticsStudent.aspx.designer.cs">
+      <DependentUpon>HomeworkBasicStatisticsStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkDatabaseDDL.aspx.cs">
+      <DependentUpon>HomeworkDatabaseDDL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkDatabaseDDL.aspx.designer.cs">
+      <DependentUpon>HomeworkDatabaseDDL.aspx</DependentUpon>
     </Compile>
     <Compile Include="HomeworkDijkstra.aspx.cs">
       <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
@@ -232,6 +316,20 @@
     <Compile Include="HomeworkDijkstra.aspx.designer.cs">
       <DependentUpon>HomeworkDijkstra.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HomeworkMonteCarloFootball.aspx.cs">
+      <DependentUpon>HomeworkMonteCarloFootball.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkMonteCarloFootball.aspx.designer.cs">
+      <DependentUpon>HomeworkMonteCarloFootball.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkRandom.aspx.cs">
+      <DependentUpon>HomeworkRandom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkRandom.aspx.designer.cs">
+      <DependentUpon>HomeworkRandom.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MonteCarloProduct.aspx.cs">
       <DependentUpon>MonteCarloProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -239,12 +337,12 @@
     <Compile Include="MonteCarloProduct.aspx.designer.cs">
       <DependentUpon>MonteCarloProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MonteCarloIntegral.aspx.cs">
-      <DependentUpon>MonteCarloIntegral.aspx</DependentUpon>
+    <Compile Include="HomwworkMonteCarloIntegral.aspx.cs">
+      <DependentUpon>HomwworkMonteCarloIntegral.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MonteCarloIntegral.aspx.designer.cs">
-      <DependentUpon>MonteCarloIntegral.aspx</DependentUpon>
+    <Compile Include="HomwworkMonteCarloIntegral.aspx.designer.cs">
+      <DependentUpon>HomwworkMonteCarloIntegral.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLHelper.cs" />

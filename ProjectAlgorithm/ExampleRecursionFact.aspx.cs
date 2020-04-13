@@ -29,7 +29,7 @@ namespace ProjectAlgorithm
             try
             {
                 int num = int.Parse(txtNum.Text);
-                Response.Write(string.Format("{0}的阶乘是{1}", num, Fact(10)));
+                Response.Write(string.Format("{0}的阶乘是{1}", num, Fact(num)));
             }
             catch
             {

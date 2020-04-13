@@ -2,7 +2,7 @@
 using System;
 using System.Data;
 using System.Web.UI.WebControls;
-namespace MyProject
+namespace ProjectAlgorithm
 {
     public partial class ExampleNaiveBayesSymptom : System.Web.UI.Page
     {
@@ -50,7 +50,7 @@ namespace MyProject
             table.Rows.Add("感冒", 2, 3);
             table.Rows.Add("感冒", 1, 4);
             table.Rows.Add("脑震荡", 2, 4);
-            NaiveBayes classifier = new NaiveBayes();
+            ClassNaiveBayes classifier = new ClassNaiveBayes();
             classifier.TrainClassifier(table);
             Response.Write(classifier.Classify(new double[] { Symptom, Job }));//新来了打喷嚏的建筑工人，问可能得什么病
         }

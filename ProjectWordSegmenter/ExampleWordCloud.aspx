@@ -20,8 +20,8 @@
         </style>
         <div id='main'></div>
         <script type = "text/javascript" > 
-            var Url = "userinfo.json";  
-           // var Url = "test.json";  
+          //var Url = "userinfo.json";  
+           var Url = "test.json";  
             $.getJSON(Url, function (data) {
                 console.dir(data)
                   //显示处理后的数据 

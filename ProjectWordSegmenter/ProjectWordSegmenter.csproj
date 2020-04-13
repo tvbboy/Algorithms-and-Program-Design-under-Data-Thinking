@@ -44,10 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="JiebaNet.Segmenter">
-      <HintPath>..\..\dll\JiebaNet.Segmenter.dll</HintPath>
+    <Reference Include="JiebaNet.Analyser, Version=0.39.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jieba.NET.0.39.1\lib\net45\JiebaNet.Analyser.dll</HintPath>
     </Reference>
-    <Reference Include="Lucene.China">
+    <Reference Include="JiebaNet.Segmenter, Version=0.39.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jieba.NET.0.39.1\lib\net45\JiebaNet.Segmenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.China, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\dll\ChineseAnalyzer\Lucene.China.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net">
@@ -57,6 +61,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -86,6 +93,12 @@
   <ItemGroup>
     <Content Include="ExampleChineseAnalyzer.aspx" />
     <Content Include="ExampleJieba.aspx" />
+    <Content Include="ExampleSegmentation.aspx" />
+    <Content Include="ExampleSegmentationCut.aspx" />
+    <Content Include="ExampleSegmentationPosSeg.aspx" />
+    <Content Include="ExampleSegmentationThreeCountry.aspx" />
+    <Content Include="ExampleSegmentationThreeCountryCut.aspx" />
+    <Content Include="ExampleSegmentationTokenize.aspx" />
     <Content Include="ExampleWordCloud.aspx" />
     <Content Include="Global.asax" />
     <Content Include="js\echarts-wordcloud.js" />
@@ -107,6 +120,48 @@
     </Compile>
     <Compile Include="ExampleJieba.aspx.designer.cs">
       <DependentUpon>ExampleJieba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleSegmentation.aspx.cs">
+      <DependentUpon>ExampleSegmentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleSegmentation.aspx.designer.cs">
+      <DependentUpon>ExampleSegmentation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleSegmentationCut.aspx.cs">
+      <DependentUpon>ExampleSegmentationCut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleSegmentationCut.aspx.designer.cs">
+      <DependentUpon>ExampleSegmentationCut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleSegmentationPosSeg.aspx.cs">
+      <DependentUpon>ExampleSegmentationPosSeg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleSegmentationPosSeg.aspx.designer.cs">
+      <DependentUpon>ExampleSegmentationPosSeg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleSegmentationThreeCountry.aspx.cs">
+      <DependentUpon>ExampleSegmentationThreeCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleSegmentationThreeCountry.aspx.designer.cs">
+      <DependentUpon>ExampleSegmentationThreeCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleSegmentationThreeCountryCut.aspx.cs">
+      <DependentUpon>ExampleSegmentationThreeCountryCut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleSegmentationThreeCountryCut.aspx.designer.cs">
+      <DependentUpon>ExampleSegmentationThreeCountryCut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExampleSegmentationTokenize.aspx.cs">
+      <DependentUpon>ExampleSegmentationTokenize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExampleSegmentationTokenize.aspx.designer.cs">
+      <DependentUpon>ExampleSegmentationTokenize.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExampleWordCloud.aspx.cs">
       <DependentUpon>ExampleWordCloud.aspx</DependentUpon>

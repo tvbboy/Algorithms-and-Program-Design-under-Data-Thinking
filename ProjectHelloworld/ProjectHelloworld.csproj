@@ -95,6 +95,7 @@
     <Content Include="HelloWorld.aspx" />
     <Content Include="homeworkGetTriangularArea.aspx" />
     <Content Include="homeworkID.aspx" />
+    <Content Include="HomeworkIsArmstrongNumber.aspx" />
     <Content Include="homeworkOutput.aspx" />
     <Content Include="homeworkPrintChar.aspx" />
     <Content Include="homeworkSqrt.aspx" />
@@ -237,6 +238,13 @@
     </Compile>
     <Compile Include="homeworkID.aspx.designer.cs">
       <DependentUpon>homeworkID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeworkIsArmstrongNumber.aspx.cs">
+      <DependentUpon>HomeworkIsArmstrongNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeworkIsArmstrongNumber.aspx.designer.cs">
+      <DependentUpon>HomeworkIsArmstrongNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="homeworkOutput.aspx.cs">
       <DependentUpon>homeworkOutput.aspx</DependentUpon>

@@ -7,11 +7,10 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace MyProject {
+namespace ProjectAlgorithm {
     
     
-    public partial class ExampleNaiveBayes
-    {
+    public partial class ExampleStatisticsPulmonary {
         
         /// <summary>
         /// form1 控件。
@@ -23,30 +22,48 @@ namespace MyProject {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ddlSymptom 控件。
+        /// txtMean 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSymptom;
+        protected global::System.Web.UI.WebControls.TextBox txtMean;
         
         /// <summary>
-        /// ddlJob 控件。
+        /// txtS 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlJob;
+        protected global::System.Web.UI.WebControls.TextBox txtS;
         
         /// <summary>
-        /// btnOut 控件。
+        /// txtX1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnOut;
+        protected global::System.Web.UI.WebControls.TextBox txtX1;
+        
+        /// <summary>
+        /// txtX2 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtX2;
+        
+        /// <summary>
+        /// Button1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

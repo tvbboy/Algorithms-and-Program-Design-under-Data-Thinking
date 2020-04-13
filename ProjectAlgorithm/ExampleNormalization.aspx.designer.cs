@@ -11,7 +11,7 @@ namespace ProjectAlgorithm
 {
 
 
-    public partial class MonteCarloIntegral
+    public partial class ExampleNormalization
     {
 
         /// <summary>

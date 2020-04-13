@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MonteCarloIntegral.aspx.cs" Inherits="ProjectAlgorithm.MonteCarloIntegral" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleMonteCarloIntegratorSinx.aspx.cs" Inherits="ProjectAlgorithm.ExampleMonteCarloIntegratorSinx" %>
 
 <!DOCTYPE html>
 

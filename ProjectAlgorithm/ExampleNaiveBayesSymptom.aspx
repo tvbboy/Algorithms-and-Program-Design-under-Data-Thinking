@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleNaiveBayesSymptom.aspx.cs" Inherits="MyProject.ExampleNaiveBayesSymptom" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleNaiveBayesSymptom.aspx.cs" Inherits="ProjectAlgorithm.ExampleNaiveBayesSymptom" %>
 
 <!DOCTYPE html>
 

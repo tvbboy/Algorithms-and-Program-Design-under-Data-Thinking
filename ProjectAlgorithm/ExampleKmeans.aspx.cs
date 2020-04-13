@@ -44,7 +44,7 @@ namespace ProjectAlgorithm
             int numClusters = 3;
             Response.Write("需要聚类的目标簇数: " + numClusters+"<br>");
 
-            int[] clustering =Kmeans.Cluster(rawData, numClusters); // this is it
+            int[] clustering =ClassKmeans.Cluster(rawData, numClusters); // this is it
 
             Response.Write("K-means 聚类结束e<br>");
 
