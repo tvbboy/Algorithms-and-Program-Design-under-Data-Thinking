@@ -69,6 +69,8 @@
                             value: randomValue(geoCoord)
                         });
                     }
+                    console.log(data);
+                    console.log(data2);
                     chart.setOption({
                         legend: {
                             data: ['唐人', '李世民父子']
@@ -96,17 +98,17 @@
                             coordinateSystem: 'geo',
                             name: '唐人',
                             type: 'scatter',
-                            symbolSize: function (val) {
-                                return val[2] * 20;
-                            },
+                            //symbolSize: function (val) {
+                            //    return val[2] * 20;
+                            //},
                             data: data
                         }, {
                             coordinateSystem: 'geo',
                             name: '李世民父子',
                             type: 'scatter',
-                            symbolSize: function (val) {
-                                return val[2] * 30;
-                            },
+                            //symbolSize: function (val) {
+                            //    return val[2] * 30;
+                            //},
                             data: data2
                         }]
                     });

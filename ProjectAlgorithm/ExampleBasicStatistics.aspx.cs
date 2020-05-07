@@ -52,11 +52,10 @@ namespace ProjectAlgorithm
             double MonthRangeDataTotal = 0;
             for (int i = 0; i < aimtmp.Length; i++)
             {
-
                 MonthRangeDataTotal += aimtmp[i];
             }
             //均值
-            double MonthRangeDataMean = MonthRangeDataTotal / aimtmp.Length;
+           double MonthRangeDataMean = MonthRangeDataTotal / aimtmp.Length;
            return MonthRangeDataMean;
         }        
         private void printData(double[] aimtmp)

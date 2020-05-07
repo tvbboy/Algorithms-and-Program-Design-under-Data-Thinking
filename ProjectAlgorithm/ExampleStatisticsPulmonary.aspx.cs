@@ -36,7 +36,10 @@ namespace ProjectAlgorithm
                 }
                 else
                     z2 = 4;//只要大于3.8就可以视为正无穷
-                Response.Write(string.Format("转换为标准正态分布之后，所求的区间是{0}-{1}，所求概率是{2}", z1, z2, ClassStatistics.selfCaculate(z2) - ClassStatistics.selfCaculate(z1)));
+                Response.Write(string.Format("转换为标准正态分布之后，所求的区间是{0}-{1}，所求概率是{2}", 
+                                    z1, z2, ClassStatistics.selfCaculate(z2) - ClassStatistics.selfCaculate(z1)
+                                    )
+                );
             }
             catch
             {

@@ -43,13 +43,25 @@ namespace ProjectAlgorithm
             double denominator = 0;
             foreach (Point p in parray)
             {
-                numerator += (p.X - averagex) * (p.Y - averagey);
-                denominator += (p.X - averagex) * (p.X - averagex);
+                numerator += p.X*p.Y;
+                denominator += p.X*p.X;
             }
+            //以下代码为华师大程浩淼同学验证后的代码，感谢贡献
+            numerator = numerator - parray.Length * averagex * averagey;
+            denominator = denominator - parray.Length * averagex * averagex;
             //回归系数b（Regression Coefficient）
             double RCB = numerator / denominator;
             //回归系数a
             double RCA = averagey - RCB * averagex;
+            //double numerator1 = 0;
+            //double denominator1 = 0;
+            //foreach (Point p in parray)
+            //{
+            //    numerator1 += (p.X - averagex) * (p.Y - averagey);
+            //    denominator1 += (p.X - averagex) * (p.X - averagex);
+            //}
+           
+
             Response.Write("回归系数A： " + RCA.ToString("0.0000"));
             Response.Write("回归系数B： " + RCB.ToString("0.0000"));
             Response.Write(string.Format("线性回归方程为： y = {0} + {1} * x",

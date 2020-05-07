@@ -12,7 +12,7 @@
         <div>
             请输入平均值<asp:TextBox ID="txtMean" runat="server"></asp:TextBox>
             <br />
-            请输入方差<asp:TextBox ID="txtS" runat="server"></asp:TextBox>
+            请输输入方差差<asp:TextBox ID="txtS" runat="server"></asp:TextBox>
             <br />
             请输入概率区间<br />
             <br />
