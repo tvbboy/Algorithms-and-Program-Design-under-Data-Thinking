@@ -53,6 +53,13 @@ namespace ProjectWordSegmenter
             return str;
         }
 
-       
+        protected void btn_Click(object sender, EventArgs e)
+        {
+            var segmenter = new JiebaSegmenter();
+            string aimFile = @"./Resources/三国演义.txt";
+            string content = ReadData(aimFile);
+            var wordsforSearch = segmenter.Cut(content);
+            Response.Write("</br>【搜索引擎模式】：{0}" + string.Join("/ ", wordsforSearch));
+        }
     }
 }

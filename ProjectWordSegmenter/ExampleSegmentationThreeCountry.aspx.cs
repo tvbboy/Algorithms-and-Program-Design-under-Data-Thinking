@@ -1,4 +1,5 @@
 ﻿using JiebaNet.Segmenter;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,6 +17,8 @@ namespace ProjectWordSegmenter
             segmenter.DeleteWord("将军");
             segmenter.DeleteWord("却说");
             segmenter.DeleteWord("二人");
+            segmenter.DeleteWord("玄德曰");
+            segmenter.DeleteWord("孔明曰");
             segmenter.DeleteWord("司马");
             segmenter.DeleteWord("不可");
             segmenter.DeleteWord("不能");
@@ -36,12 +39,13 @@ namespace ProjectWordSegmenter
             Stopwatch sw = new Stopwatch();
             sw.Start();
             //搜索引擎模式分词
-            var wordsforSearch = segmenter.CutForSearch(content);
+            //var wordsforSearch = segmenter.CutForSearch(content);
+            //精确模式
+            var wordsforSearch = segmenter.Cut(content);
+            List<KV> list = new List<KV>();
             //定义数据结构persons ，放置人名和词频
             Dictionary<string, int> persons = new Dictionary<string, int>();
-            //将要以JSON格式输出的字符串，将其写到JSON文件中，就可以实现，词云图
-            string jsonstr = "[";
-            int i = 0;
+           
             foreach (string item in wordsforSearch.Distinct<string>())
             {
                 //对长度大于等于2并且小于等于4的词进行统计
@@ -53,19 +57,16 @@ namespace ProjectWordSegmenter
                         persons.Add(item.Trim(), f);
                         if (f >= 100 && f != 2406)//出于测试需要只对频率100以上的关键词，制作词云
                         {
-                            //第一个前不用加逗号，目的是构造一个A,B,C,D,.....，注意除了A之外，每一个字母前都有逗号
-                            if (i == 0)
-                                jsonstr += "{\"name\":\"" + item.Trim() + "\",\"value\":" + f + "}";
-                            else
-                                jsonstr += ",{\"name\":\"" + item.Trim() + "\",\"value\":" + f + "}";
-                            i++;
+                            KV kv = new KV(item.Trim(),f);
+                            list.Add(kv);
                         }
                     }
                 }
 
-            }
-            jsonstr += "]";
-            WriteData("test.json", jsonstr);
+            }               
+            string output = JsonConvert.SerializeObject(list);
+            //将要以JSON格式输出的字符串，将其写到JSON文件中，就可以实现，词云图
+            WriteData("test.json", output);
             persons = (from entry in persons
                        orderby entry.Value descending
                        select entry).ToDictionary(pair => pair.Key, pair => pair.Value);
@@ -136,6 +137,8 @@ namespace ProjectWordSegmenter
         public void WriteData(string filePath, string fileContent)
         {
             string aimfilepath = MapPath(filePath);//将虚拟路径转为实际路径
+            if (File.Exists(aimfilepath))//如果原文件存在，先删除以免数据堆叠导致JSON语法错误
+                File.Delete(aimfilepath);
             using (FileStream fs = new FileStream(aimfilepath, FileMode.OpenOrCreate))
             {
                 StreamWriter sw = new StreamWriter(fs);
@@ -143,5 +146,16 @@ namespace ProjectWordSegmenter
                 sw.Close();
             }
         }
+
+    }
+    public class KV
+    {
+        public KV(string s, double d)
+        {
+            name = s;
+            value = d;
+        }
+       public string name { get; set; }
+       public  double value { get; set; }
     }
 }
