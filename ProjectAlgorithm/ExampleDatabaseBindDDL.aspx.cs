@@ -10,7 +10,7 @@ namespace ProjectAlgorithm
         protected void Page_Load(object sender, EventArgs e)
         {
             SQLHelper sh = new SQLHelper();
-            string sql = "select c_dy,c_dynasty_chn from DYNASTIES order by c_sort";
+            string sql = "select c_dy,c_dynasty_chn from DYNASTIES WHERE c_start<1911 order by c_sort";
             DataTable dt = new DataTable();
             DataSet ds = new DataSet();
             try
